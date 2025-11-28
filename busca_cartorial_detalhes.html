@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>INCRA-PR: Detalhamento da Busca Cartorial</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <script src="assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- CABEÇALHO -->
+    <header>
+      <img src="assets/img/logo_ted_incra.png" alt="Logo INCRA TED" />
+      <div class="titulo-sistema">INCRA-PR: Detalhamento da Busca Cartorial</div>
+    </header>
+    <div class="content">
+      <!-- ABAS + BOTÃO VOLTAR -->
+      <div class="top-bar-detalhe">
+        <!-- ABAS -->
+        <div class="tabs">
+          <div class="tab active" id="tab-geral" onclick="showPanel('geral')">
+            Dados Gerais
+          </div>
+          <div class="tab" id="tab-cartorial" onclick="showPanel('cartorial')">
+            Dados Cartoriais
+          </div>
+          <div
+            class="tab"
+            id="tab-propriedade"
+            onclick="showPanel('propriedade')"
+            >
+            Propriedade / Obtenção
+          </div>
+          <div class="tab" id="tab-lotes" onclick="showPanel('lotes')">
+            Lotes Desmembrados
+          </div>
+          <div class="tab" id="tab-mapa" onclick="showPanel('mapa')">
+            Mapa do Imóvel
+          </div>
+        </div>
+        <!-- BOTÃO -->
+        <button class="btn-voltar" onclick="window.location.href='busca_cartorial.html'">⟵ Voltar para Busca</button>
+      </div>
+      <!-- PAINEL 1 -->
+      <div class="panel active" id="geral">
+        <h3>Dados Gerais do Imóvel</h3>
+        <div class="grid-2">
+          <div>
+            <label>Nº Registro</label>
+            <div class="value-box">12345</div>
+            <label>Tipo de Documento</label>
+            <div class="value-box">Matrícula</div>
+            <label>Tipo de Imóvel</label>
+            <div class="value-box">Rural</div>
+          </div>
+          <div>
+            <label>Município</label>
+            <div class="value-box">Curitiba</div>
+            <label>Área Registrada</label>
+            <div class="value-box">45,6 ha</div>
+            <label>Lote / Gleba</label>
+            <div class="value-box">Lote 12 - Gleba Norte</div>
+          </div>
+        </div>
+      </div>
+      <!-- PAINEL 2 -->
+      <div class="panel" id="cartorial">
+        <h3>Informações Cartoriais</h3>
+        <div class="grid-2">
+          <div>
+            <label>Circunscrição / Ofício</label>
+            <div class="value-box">1º Ofício</div>
+            <label>Nº do Livro</label>
+            <div class="value-box">12</div>
+            <label>Data Abertura</label>
+            <div class="value-box">10/03/2008</div>
+          </div>
+          <div>
+            <label>Registro Anterior</label>
+            <div class="value-box">Transcrição 1234</div>
+            <label>RI Competente</label>
+            <div class="value-box">Registro Central Curitiba</div>
+            <label>Outras Informações</label>
+            <div class="value-box">Nenhuma observação adicional.</div>
+          </div>
+        </div>
+      </div>
+      <!-- PAINEL 3 -->
+      <div class="panel" id="propriedade">
+        <h3>Propriedade e Modo de Obtenção</h3>
+        <label>Proprietário Atual</label>
+        <div class="value-box">José de Souza</div>
+        <label>Proprietário Anterior</label>
+        <div class="value-box">Fazenda Fulanito</div>
+        <label>Modo de Obtenção</label>
+        <div class="value-box">Escritura de compra e venda</div>
+        <label>Outras Informações</label>
+        <div class="value-box">
+          Imóvel regularizado conforme procedimento administrativo nº 123/2010.
+        </div>
+      </div>
+      <!-- PAINEL 4 -->
+      <div class="panel" id="lotes">
+        <h3>Lotes Desmembrados</h3>
+        <table>
+          <tr>
+            <th>Nº Lote</th>
+            <th>Novo Registro</th>
+            <th>Área Destinada</th>
+            <th>Área Remanescente</th>
+            <th>Confrontantes</th>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Matrícula 5555</td>
+            <td>10 ha</td>
+            <td>35 ha</td>
+            <td>Norte: Silva / Sul: Oliveira</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Matrícula 7777</td>
+            <td>12 ha</td>
+            <td>23 ha</td>
+            <td>Leste: Lima / Oeste: Souza</td>
+          </tr>
+        </table>
+      </div>
+      <!-- PAINEL -->
+      <div class="panel" id="mapa">
+        <h3>Mapa do Imóvel</h3>
+        <div class="map-area-detalhe">
+          [ MAPA DO IMÓVEL ]
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

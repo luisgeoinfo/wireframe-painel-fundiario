@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <title>INCRA-PR: Busca de Beneficiários e Ocupantes</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/scripts.js"></script>
+  </head>
+  <body>
+    <!-- Cabeçalho -->
+    <header>
+      <img src="assets/img/logo_ted_incra.png" alt="Logo INCRA TED">
+      <div class="titulo-sistema">INCRA-PR: Busca de Beneficiários e Ocupantes</div>
+    </header>
+    <div class="content">
+      <!-- Abas + Botão Voltar -->
+      <div class="top-bar-detalhe">
+        <div class="tabs">
+          <!--<div class="tab active" id="tab-uf" onclick="showPanel('uf')">Unidade Familiar</div>-->
+          <div class="tab active" id="tab-beneficiarios" onclick="showPanel('beneficiarios')">Pessoas / Beneficiários</div>
+          <div class="tab" id="tab-ocupantes" onclick="showPanel('ocupantes')">Ocupantes Irregulares</div>
+          <div class="tab" id="tab-sei" onclick="showPanel('sei')">Documentação / SEI</div>
+          <div class="tab" id="tab-mapa" onclick="showPanel('mapa')">Mapa do Lote</div>
+        </div>
+        <button class="btn-voltar" onclick="window.location.href='busca_beneficiarios_ocupantes_irregulares.html'">
+        ⟵ Voltar para Busca
+        </button>
+      </div>
+      <!-- Painel 1 – UF -->
+      <div class="panel active" id="uf">
+        <h3>Informações da Unidade Familiar</h3>
+        <div class="grid-2">
+          <div>
+            <label>Lote</label>
+            <div class="value-box">lote</div>
+            <label>UF</label>
+            <div class="value-box">uf</div>
+            <label>cod_benef</label>
+            <div class="value-box">cod_benef</div>
+            <label>status_sipra</label>
+            <div class="value-box">status_sipra</div>
+          </div>
+          <div>
+            <label>Data de Homologação</label>
+            <div class="value-box">data_homol</div>
+            <label>Vistoriar?</label>
+            <div class="value-box">vistoriar</div>
+            <label>Motivo da Vistoria</label>
+            <div class="value-box">motivo_vistoria</div>
+          </div>
+        </div>
+      </div>
+      <!-- Painel 2 – Beneficiários -->
+      <div class="panel" id="beneficiarios">
+        <h3>Pessoas Vinculadas à Unidade Familiar</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Papel</th>
+              <th>Indício de Irregularidade</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>nome titular 1</td>
+              <td>cpf titular 1</td>
+              <td>Titular 1</td>
+              <td>irregularidade</td>
+            </tr>
+            <tr>
+              <td>nome titular 2</td>
+              <td>cpf titular 2</td>
+              <td>Titular 2</td>
+              <td>irregularidade</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Painel 3 – Ocupantes -->
+      <div class="panel" id="ocupantes">
+        <h3>Ocupantes Identificados (Irregulares / Não Beneficiários)</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Observações</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ocupante 1</td>
+              <td>cpf ou —</td>
+              <td>detalhamento da irregularidade</td>
+            </tr>
+            <tr>
+              <td>ocupante 2</td>
+              <td>cpf ou —</td>
+              <td>detalhamento da irregularidade</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- Painel 4 – Documentação / SEI -->
+      <div class="panel" id="sei">
+        <h3>Documentos / SEI do Processo</h3>
+        <label>Relatório de Campo</label>
+        <div class="value-box">nup ou descrição</div>
+        <label>Parecer Técnico</label>
+        <div class="value-box">data ou observação</div>
+        <label>Despachos</label>
+        <div class="value-box">descrição / datas</div>
+        <label>Observações Gerais</label>
+        <div class="value-box">observações adicionais</div>
+      </div>
+      <!-- Painel 5 – Mapa -->
+      <div class="panel" id="mapa">
+        <h3>Mapa do Lote</h3>
+        <div class="map-area-detalhe">
+           MAPA DO LOTE 
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

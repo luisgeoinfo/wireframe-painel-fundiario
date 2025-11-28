@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f7f7f7;
+}
+
+/* CABEÇALHO PADRÃO */
+header {
+    background: #4D6F3A;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+header img {
+    height: 48px;
+}
+
+.titulo-sistema {
+    font-size: 22px;
+    font-weight: 600;
+    flex-grow: 1;
+    text-align: center;
+}
+
+/* LAYOUT BUSCA */
+.container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: calc(100vh - 70px);
+}
+
+.sidebar {
+    background: #ffffff;
+    padding: 20px;
+    border-right: 1px solid #ccc;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+    font-size: 18px;
+    color: #4D6F3A;
+}
+
+.sidebar label {
+    display: block;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.sidebar input,
+.sidebar select,
+.sidebar button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+.sidebar button {
+    margin-top: 16px;
+    background: #4D6F3A;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.sidebar button:hover {
+    background: #3b592e;
+}
+
+.main {
+    display: grid;
+    grid-template-rows: 40% 60%;
+}
+
+.map-area {
+    background: #dcdcdc;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: #333;
+}
+
+.results {
+    background: white;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.results h2 {
+    margin-top: 0;
+}
+
+.results table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+}
+
+.results th,
+.results td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.results th {
+    background: #eee;
+}
+
+/* DETALHAMENTO */
+.content {
+    padding: 20px;
+}
+
+/* Barra com abas + botão voltar */
+.top-bar-detalhe {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.tab {
+    padding: 10px 16px;
+    background: #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.tab.active {
+    background: #4D6F3A;
+    color: white;
+}
+
+/* Painéis de conteúdo */
+.panel {
+    display: none;
+    background: white;
+    padding: 20px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+.panel.active {
+    display: block;
+}
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    font-weight: 600;
+    display: block;
+    margin-top: 10px;
+}
+
+.value-box {
+    background: #f2f2f2;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    margin-top: 5px;
+}
+
+/* Tabela de lotes */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+th {
+    background: #eee;
+}
+
+/* Mapa do detalhe */
+.map-area-detalhe {
+    width: 100%;
+    height: 400px;
+    background: #dcdcdc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    color: #333;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+    padding: 10px 20px;
+    border-radius: 6px;
+    background: #4D6F3A;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn-voltar:hover {
+    background: #3b592e;
+}

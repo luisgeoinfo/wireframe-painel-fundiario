@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<title>INCRA-PR: Busca Cartorial</title>
+		<link rel="stylesheet" href="assets/css/style.css" />
+	</head>
+	<body>
+    <!-- CABEÇALHO -->
+		<header>
+			<img src="assets/img/logo_ted_incra.png" alt="Logo INCRA TED" />
+			<div class="titulo-sistema">INCRA-PR: Busca Cartorial</div>
+		</header>
+		<div class="container">
+			<div class="sidebar">
+				<h2>Filtros de Busca</h2>
+				<label>Nº Matrícula / Transcrição</label>
+				<input type="text" placeholder="Ex: 12345" />
+				<label>Tipo de Documento</label>
+				<select>
+					<option>Matrícula</option>
+					<option>Transcrição</option>
+				</select>
+				<label>Tipo de Imóvel</label>
+				<select>
+					<option>Rural</option>
+					<option>Urbano</option>
+				</select>
+				<label>Comarca (Serviço Registral)</label>
+				<select>
+					<option>Selecione...</option>
+					<option>Curitiba</option>
+					<option>Londrina</option>
+				</select>
+				<label>Município</label>
+				<select>
+					<option>Selecione...</option>
+					<option>Curitiba</option>
+					<option>Colombo</option>
+				</select>
+				<label>Circunscrição / Ofício</label>
+				<select>
+					<option>1º</option>
+					<option>2º</option>
+					<option>3º</option>
+					<option>Único</option>
+				</select>
+				<button>Pesquisar</button>
+			</div>
+			<div class="main">
+				<div class="map-area">MAPA</div>
+				<div class="results">
+					<h2>Resultados da Pesquisa</h2>
+					<table>
+						<tr>
+							<th>Nº Registro</th>
+							<th>Tipo Documento</th>
+							<th>Tipo Imóvel</th>
+							<th>Proprietário Atual</th>
+							<th>Município</th>
+							<th>Ações</th>
+						</tr>
+						<tr>
+							<td>12345</td>
+							<td>Matrícula</td>
+							<td>Rural</td>
+							<td>José de Souza</td>
+							<td>Curitiba</td>
+							<td>
+								<a href="busca_cartorial_detalhes.html">
+								<button class="btn-voltar">Detalhes</button>
+								</a>
+							</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
